@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Icreatechs Training Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <div>
+        <center>
+            <h1 style="font-size: 50px;">HELLO!!!</h1>
+        </center>
+    </div>
+    <div>
+        <center>
+            <div class="container">
+                <h2 id="text">I am Larly Catian.</h2>
+                <button id="changeButton">Click!</button>
+            </div>
+            <script>
+                const textElement = document.getElementById('text');
+                const changeButton = document.getElementById('changeButton');
+        
+                const text = [
+                    'I am 19 years old, and a BS Computer Science student',
+                    'It is nice to meet you!'
+                ];
+                let currentTextIndex = 0;
+        
+                function getNextText() {
+                    const nextText = text[currentTextIndex];
+                    currentTextIndex = (currentTextIndex + 1) % text.length;
+                    return nextText;
+                }
+        
+                changeButton.addEventListener('click', () => {
+                    textElement.textContent = getNextText();
+                });
+            </script>
+        </center>
+    </div>
+    <br>
+    <div>
+        <h1>TRAINING EXPERIENCE:</h1>
+        <hr size="2" width="500">
+        <p>Since I lack creativity and don't enjoy designing at all, front-end development didn't really cross my mind. 
+            However, as I participated in the online group training, I have realized that there is still more to discover about the things 
+            related to the course I have taken that I am capable of doing. Even though it can be confusing and annoying when I can't use the tags and 
+            elements very effectively, I am sure that I will improve over time.</p>
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick='document.getElementById("trainer").innerHTML="Axel Delgado"'>Trainer</button>
+        <h1 id="trainer"></h1>
+        <button type="button" onclick='document.getElementById("feedback").innerHTML="All I can say is under his guidance, I have learned more. He is attentive and responsible, and turns out he is not as scary as I thought before. He is great."'>Feedback</button>
+        <p id="feedback"></p>
+    </div>
+    <br>
+    <div>
+        <h1>ACCOMPLISHMENTS:</h1>
+        <hr size="2" width="500">
+        <nav>
+            <div class="container2">
+                <h2>Project 1</h2>
+                <a href="./Project1/index.html"><br>Click to view project.</a>
+            </div>
+            <div class="container2">
+                <h2>Assignment 1</h2>
+                <a href="./Assignment1/index.html">Click to view assignment.</a>
+            </div>
+            <div class="container2">
+                <h2>Assignment 2</h2>
+                <a href="./Assignment2/index.html">Click to view assignment.</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
